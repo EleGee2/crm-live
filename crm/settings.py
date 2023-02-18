@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-=q(-sr=#+osz9u3cysikz9$^5b9py=j&_t-wv(ky7l#5yokwl0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['jerome-crm-app.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['jeromecrm-1.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -50,7 +50,7 @@ MIDDLEWARE = [
 
     'django.middleware.security.SecurityMiddleware',
 
-    # 'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -130,9 +130,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 MEDIA_URL = '/images/'
 
