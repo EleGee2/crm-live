@@ -18,7 +18,7 @@ from .decorators import unauthenticated_user, allowed_users, admin_only
 # Create your views here.
 
 
-@unauthenticated_user
+# @unauthenticated_user
 def registerPage(request):
     form = CreateUserForm()
 
@@ -36,7 +36,7 @@ def registerPage(request):
     return render(request, 'accounts/register.html', context)
 
 
-@unauthenticated_user
+# @unauthenticated_user
 def loginPage(request):
     if request.method == 'POST':
         username = request.POST.get('username')
